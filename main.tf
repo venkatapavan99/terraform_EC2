@@ -10,7 +10,7 @@ resource "aws_s3_bucket" "best1" {
    bucket = "vinithaprakbharhclhyd"
  }
 resource "aws_s3_bucket_versioning" "version" {
-  bucket = aws_s3_bucket1.id 
+  bucket = aws_s3_bucket.best1.id 
   versioning_configuration {
     status = "Enabled"
   }
